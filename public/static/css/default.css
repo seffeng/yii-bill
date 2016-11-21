@@ -1,0 +1,91 @@
+/* default.css */
+#totop {
+  position: fixed;
+  bottom: 3em;
+  right: 1em;
+  cursor: pointer;
+  z-index: 8999;
+}
+.ajax-loading-overlay {
+    position: absolute;
+    z-index: 799;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80FFFFFF', endColorstr='#80FFFFFF', GradientType=0);
+}
+.ajax-loading-overlay>.ajax-loading-icon {
+    position: relative;
+    left: 8px;
+    top: 8px;
+}
+.ajax-loading-overlay.content-loaded {
+    background-color: rgba(255,255,255,.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66FFFFFF', endColorstr='#66FFFFFF', GradientType=0);
+}
+.ajax-loading-overlay.almost-loaded {
+    background-color: rgba(255,255,255,.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4CFFFFFF', endColorstr='#4CFFFFFF', GradientType=0);
+}
+.ajax-loading-overlay.ajax-overlay-body {
+    position: fixed;
+    z-index: 2999;
+}
+.ajax-loading-overlay.ajax-overlay-body>.ajax-loading-icon {
+    left: 8px;
+    top: 8px;
+}
+.alert-box {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 8999;
+}
+.alert {
+    margin-bottom: 2px;
+    text-align: center;
+}
+.orange {
+    color: #ff892a!important
+}
+.orange2 {
+    color: #feb902!important
+}
+.light-orange {
+    color: #fcac6f!important
+}
+.th-sm {
+    width: 75px;
+}
+.main-header {
+    z-index: 1005;
+}
+.label-tags {
+    display: inline-block;
+}
+.margin5 {
+    margin: 5px;
+}
+.margin10 {
+    margin: 10px;
+}
+.margin-left-5 {
+    margin-left: 5px;
+}
+.margin-left-10 {
+    margin-left: 10px;
+}
+.margin-right-5 {
+    margin-right: 5px;
+}
+.margin-right-10 {
+    margin-right: 10px;
+}
+.margin-left-20 {
+    margin-left: 20px;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}

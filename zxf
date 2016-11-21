@@ -1,0 +1,24 @@
+#! /usr/bin/env php
+<?php
+/**
+ * console
+**/
+
+/* APP NAME */
+define('APP_NAME',      'console');
+
+/* THIS PATH */
+define('THIS_PATH',      preg_replace_callback('/[\/\\\\]+/', function($match){ return '/'; }, dirname(__FILE__)) .'/');
+
+require(THIS_PATH .'env.php');
+
+require(VENDOR_PATH .'autoload.php');
+require(VENDOR_PATH .'yiisoft/yii2/Yii.php');
+require(APP_PATH .'config/alias.php');
+
+$config = yii\helpers\ArrayHelper::merge(
+    require(APP_PATH . 'config/main.php'),
+    require(APP_PATH . APP_NAME . D_S .'config/main.php')
+);
+
+(new yii\console\Application($config))->run();

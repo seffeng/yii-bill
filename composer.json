@@ -1,0 +1,28 @@
+{
+    "name": "seffeng/yii_bill",
+    "description": "yii2 Bill",
+    "type": "project",
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "yiisoft/yii2-debug": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "seffeng,",
+            "email": "seffeng@sina.cn"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
